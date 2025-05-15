@@ -42,3 +42,5 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 chmod x+ salon.sh
 chmod +x salon.sh
 psql --username=freecodecamp --dbname=postgres -f salon.sql
+pg_dump -cC --inserts -U freecodecamp salon > salon.sql
+pg_dump -cC --inserts -U freecodecamp salon > salon.sql
